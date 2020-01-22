@@ -15,7 +15,7 @@ import br.com.generation.Token.security.Token;
 public class UsuarioController {
 	@PostMapping("/login")
 	public ResponseEntity<Token> autentica(@RequestBody Usuario usuario){
-		if (usuario.getEmail().equals("debora@gmail.com") && usuario.getSenha().equals("12345")) {
+		if (usuario.getEmail().equals("user@user.com") && usuario.getSenha().equals("12345")) {
 			// simulando q recuperei o usuário do banco de dados
 			usuario.setId(1);
 			usuario.setNome("Debora");		
